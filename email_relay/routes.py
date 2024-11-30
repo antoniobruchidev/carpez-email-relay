@@ -9,9 +9,6 @@ def send_mail():
     data = request.form
     secret = os.environ.get("SECRET")
     sender = os.environ.get("MAIL_USERNAME")
-    response = {
-          
-    }
     if 'subject' in data \
     and 'body' in data \
     and 'sender' in data \
